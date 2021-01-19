@@ -1,0 +1,44 @@
+const express = require('express)
+const testmodel =require('../models/test')
+const router = new express Router()
+router.post('/register',asyync (req,res)=>{
+    const test = new testmodel(req.body)
+    try{
+        awit test.save()
+        res.send({
+            status:1
+            message:'data ins
+            data:test
+        })
+    }
+catch(e){
+    res.send({
+
+    })
+}
+})
+router.get('/usertest, async(req,res)=>{
+
+   try{
+           allData = new testmodel.find({})
+       res.sen({
+           sta
+       })
+   }
+catch(e){
+    res.send({
+
+    })
+}
+})'
+router.get(/usertest/"userid,async(req,res)=>{
+    const userid = req.params.userid
+    try{
+        userData = awit testmodel.findById(userid)
+        res
+    }
+})
+router.patch(/usertest/"userid,async(req,res)=>{
+    valUpdates = {"name","age"}
+    const keys =object.keys(req.body)
+    const flag = keys.every((k)=> includes.valUpdates

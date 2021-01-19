@@ -1,0 +1,19 @@
+{{>header}}
+{{>nav}}
+
+<section class="taskContainer">
+{{#each pageData}}
+
+    <div class="task">
+    <h3>{{this.title}}</h3>
+    <h4>{{this.body}}</h4>
+    <a href="{{this.id}}">single</a> 
+     </div>
+    {{/each}}
+</section>
+
+
+
+
+{{>footer}}
+   
